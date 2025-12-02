@@ -1,0 +1,61 @@
+/* ========= HEADER GENERAL ========= */
+.main-header {
+  width: 100%;
+  background: #15292B;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+/* ========= LOGO ========= */
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo::before {
+  content: "</>";
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+/* ========= NAV ========= */
+.header-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-item {
+  color: #c7c7c7;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #fff;
+}
+
+.nav-item.active {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+
+.header-nav a {
+    margin-right: 70px;
+}
