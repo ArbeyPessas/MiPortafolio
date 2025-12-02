@@ -1,4 +1,4 @@
-import "./comunicacion.css"
+import "./Comunicacion.css"
 
 import React from 'react'
 
