@@ -6,7 +6,7 @@ import Normatividad from "../pages/normatividad/Normatividad";
 import Emociones from "../pages/emociones/Emociones";
 import GestionTiempo from "../pages/tiempo/Tiempo"
 import Tecnicas from "../pages/tecnicas/Tecnicas";
-import Comunicacion from "../pages/comunicacion/comunicacion";
+import Comunicacion from "../pages/comunicacion/Comunicacion";
 import Habilidades from "../pages/habilidades/Habilidades";
 
 const AppRouter = () => {
