@@ -1,4 +1,4 @@
-import './components.css';
+import './Components.css';
 
 export default function Timeline({items = []}) {
   // items: [{date, title, description}]

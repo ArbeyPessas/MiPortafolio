@@ -1,3 +1,4 @@
+import './Components.css';
 // videoSrc: import like import vid from '../assets/videos/recorrido.mp4'
 export default function VideoPlayer({ videoSrc, poster }) {
   if (!videoSrc) return <p>No hay video cargado.</p>;

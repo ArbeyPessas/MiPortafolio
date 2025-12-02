@@ -1,5 +1,5 @@
 
-import './components.css';
+import './Components.css';
 
 export default function InfoCard({title, subtitle, children, footer}) {
   return (

@@ -3,7 +3,7 @@ import InfoCard from '../../components/InfoCard';
 import Gallery from '../../components/Gallery';
 import "./Contexto.css";
 
-import img1 from '../../assets/images/CampusUniversitarioYumbo1.jpg';
+import img1 from '../../assets/images/CampusUniversitarioYumbo1.JPG';
 import img2 from '../../assets/images/CampusUniversitarioYumbo2.jpg';
 import img3 from '../../assets/images/CampusUniversitarioYumbo3.jpg';
 import img4 from '../../assets/images/CampusUniversitarioYumbo4.jpg';

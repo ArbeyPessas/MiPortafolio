@@ -1,4 +1,4 @@
-import './components.css';
+import './Components.css';
 
 export default function VideoEmbed({src, title="Video"}) {
   // src can be a youtube embed url (https://www.youtube.com/embed/ID)

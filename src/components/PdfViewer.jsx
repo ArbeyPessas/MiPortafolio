@@ -1,4 +1,4 @@
-import './components.css';
+import './Components.css';
 
 export default function PdfViewer({fileUrl, height = 600}) {
   // fileUrl can be /pdfs/archivo.pdf (public folder) or import
