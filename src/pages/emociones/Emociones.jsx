@@ -1,5 +1,6 @@
 import "./Emociones.css";
 import emocionesImg from "../../assets/images/emociones.jpg";
+import reflexionImg from "../../assets/images/reflexion.jpg"; // 👈 nueva imagen
 import PdfViewer from "../../components/PdfViewer";
 import discoforumPdf from "../../assets/pdf/discoforum.pdf";
 
@@ -7,7 +8,7 @@ function Emociones() {
   return (
     <section className="emociones-page">
 
-      {/* TEXTO + IMAGEN */}
+      {/* TEXTO + IMAGEN SUPERIOR */}
       <div className="emociones-container">
 
         <div className="emociones-text">
@@ -37,7 +38,6 @@ function Emociones() {
 
         <PdfViewer fileUrl={discoforumPdf} height={500} />
 
-        {/* BOTÓN DESCARGA */}
         <div className="pdf-download">
           <a
             href={discoforumPdf}
@@ -47,6 +47,28 @@ function Emociones() {
             Descargar PDF del Discofórum
           </a>
         </div>
+      </div>
+
+      {/* ✅ REFLEXIÓN ABAJO DEL TODO */}
+      <div className="emociones-reflexion">
+
+        <div className="reflexion-text">
+          <h2>Reflexión</h2>
+          <p>
+            Esta experiencia me permitió comprender la importancia de reconocer
+            mis emociones y aprender a gestionarlas de manera consciente.
+            El discofórum fue una herramienta valiosa para expresar sentimientos,
+            escuchar a otros y reflexionar sobre situaciones cotidianas que generan
+            estrés en la vida académica,ademas mientra hacia esta pestaña me salieron
+            mas errores de lo comun y fue algo muy estresante,pero toco ser muy pasiente
+            y tratar de no frustarme
+          </p>
+        </div>
+
+        <div className="reflexion-image">
+          <img src={reflexionImg} alt="Reflexión emocional" />
+        </div>
+
       </div>
 
     </section>

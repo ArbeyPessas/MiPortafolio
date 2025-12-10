@@ -1,38 +1,37 @@
-/* ===== CONTENEDOR GENERAL ===== */
+/* ===== PÁGINA TIEMPO ===== */
 .tiempo-page {
   background: #0f1117;
-  color: #fff;
+  color: #ffffff;
   min-height: 100vh;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
-/* ===== TEXTO + IMAGEN SUPERIOR ===== */
+/* ===== CONTENEDOR TEXTO + IMAGEN ===== */
 .tiempo-container {
   max-width: 1200px;
   margin: 0 auto 60px;
   display: flex;
-  gap: 40px;
   align-items: center;
+  gap: 40px;
 }
 
-/* TEXTO */
 .tiempo-text {
   flex: 1;
 }
 
 .tiempo-text h1 {
   font-size: 42px;
-  margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
 .tiempo-text p {
   color: #c7c7c7;
   font-size: 17px;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  line-height: 1.7;
+  margin-bottom: 18px;
 }
 
-/* IMAGEN PRINCIPAL */
 .tiempo-image {
   flex: 1;
   display: flex;
@@ -40,64 +39,116 @@
 }
 
 .tiempo-image img {
-  width: 100%;
-  max-width: 450px;
+  max-width: 100%;
   border-radius: 16px;
-  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 /* ===== CRONOGRAMA ===== */
 .tiempo-cronograma {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1100px;
+  margin: 0 auto 70px;
   text-align: center;
 }
 
 .tiempo-cronograma h2 {
   font-size: 28px;
   margin-bottom: 25px;
-  border-left: 4px solid #3b82f6;
-  padding-left: 12px;
-  text-align: left;
 }
 
-/* IMAGEN CRONOGRAMA – PARTE SEGURA */
-.tiempo-cronograma img {
-  width: 100%;
+.cronograma-img {
   max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-  object-fit: contain;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-radius: 14px;
+  border: 1px solid #1f2937;
+}
+
+/* ===== BOTÓN DESCARGA ===== */
+.cronograma-download {
+  margin-top: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  background: #3b82f6;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* ===== REFLEXIÓN ===== */
+.tiempo-reflexion {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-left: 4px solid #3b82f6;
+  background: #111827;
+  border-radius: 12px;
+}
+
+.tiempo-reflexion h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.tiempo-reflexion p {
+  color: #c7c7c7;
+  font-size: 17px;
+  line-height: 1.7;
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
+@media (max-width: 992px) {
+  .tiempo-container {
+    gap: 30px;
+  }
+
+  .tiempo-text h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
   .tiempo-container {
     flex-direction: column;
     text-align: center;
   }
 
   .tiempo-text h1 {
-    font-size: 32px;
-  }
-
-  .tiempo-cronograma h2 {
-    font-size: 24px;
-    text-align: center;
-    border-left: none;
-    border-bottom: 3px solid #3b82f6;
-    padding-left: 0;
-    padding-bottom: 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .tiempo-page {
-    padding: 30px 15px;
+    font-size: 30px;
   }
 
   .tiempo-text p {
     font-size: 16px;
+  }
+
+  .tiempo-cronograma h2,
+  .tiempo-reflexion h2 {
+    font-size: 22px;
+  }
+
+  .tiempo-page {
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tiempo-text h1 {
+    font-size: 26px;
+  }
+
+  .tiempo-reflexion {
+    padding: 30px 20px;
+  }
+
+  .tiempo-reflexion p {
+    font-size: 15px;
   }
 }

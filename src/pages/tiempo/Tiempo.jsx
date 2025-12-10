@@ -1,7 +1,7 @@
 import "./Tiempo.css";
 
-import tiempoImg from "../../assets/images/tiempo.jpg";       // Imagen principal
-import cronogramaImg from "../../assets/images/cronograma.jpg"; // Imagen del cronograma
+import tiempoImg from "../../assets/images/tiempo.jpg";
+import cronogramaImg from "../../assets/images/cronograma.jpg";
 
 function Tiempo() {
   return (
@@ -35,7 +35,36 @@ function Tiempo() {
       {/* CRONOGRAMA */}
       <div className="tiempo-cronograma">
         <h2>Cronograma de actividades</h2>
-        <img src={cronogramaImg} alt="Cronograma de actividades" />
+
+        <img
+          src={cronogramaImg}
+          alt="Cronograma de actividades"
+          className="cronograma-img"
+        />
+
+        {/* BOTÓN DESCARGA */}
+        <div className="cronograma-download">
+          <a
+            href={cronogramaImg}
+            download
+            className="download-btn"
+          >
+            Descargar cronograma
+          </a>
+        </div>
+      </div>
+
+      {/* ✅ REFLEXIÓN FINAL */}
+      <div className="tiempo-reflexion">
+        <h2>Reflexión</h2>
+        <p>
+          Esta actividad fue una de mis favoritas debido a que, me permitió 
+          tomar conciencia sobre la importancia de organizar mejor mi tiempo y establecer prioridades claras en mis
+          responsabilidades académicas, personales y haci pude darme cuenta de los tiempo que no puede aver optimizado antes. Aprendí que una adecuada
+          planificación no solo mejora el rendimiento académico, sino que también
+          contribuye a reducir el estrés y a mantener un equilibrio saludable entre
+          el estudio, el descanso y la vida personal.
+        </p>
       </div>
 
     </section>

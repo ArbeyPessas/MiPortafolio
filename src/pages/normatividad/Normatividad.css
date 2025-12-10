@@ -1,0 +1,91 @@
+/* ===== PÁGINA GENERAL ===== */
+.page {
+  background: #0f1117;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 60px 20px;
+
+  /* ✅ CONTENEDOR SEGURO */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== TÍTULO PRINCIPAL ===== */
+.page h1 {
+  text-align: left;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* ===== SUBTÍTULOS ===== */
+.page h2 {
+  text-align: left;
+  font-size: 28px;
+  margin: 50px 0 15px;
+  border-left: 4px solid #3b82f6;
+  padding-left: 14px;
+}
+
+.page h3 {
+  text-align: left;
+  font-size: 20px;
+  margin: 30px 0 15px;
+  color: #e5e7eb;
+}
+
+/* ===== TEXTOS ===== */
+.page p {
+  text-align: left;
+  color: #c7c7c7;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+
+  /* ✅ evita que se vea muy ancho */
+  max-width: 1000px;
+}
+
+/* ===== INFOCARD ===== */
+.info-card {
+  max-width: 1000px;
+  margin: 0 0 40px;
+}
+
+/* ===== DESCARGAS ===== */
+.downloads {
+  max-width: 1000px;
+  margin: 20px 0 40px;
+}
+
+/* ===== PDF VIEWER ===== */
+.pdf-viewer {
+  max-width: 1000px;
+  margin: 20px 0 60px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #1f2937;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .page {
+    padding: 40px 15px;
+  }
+
+  .page h1 {
+    font-size: 30px;
+  }
+
+  .page h2 {
+    font-size: 24px;
+  }
+
+  .page h3 {
+    font-size: 18px;
+  }
+
+  .page p {
+    font-size: 16px;
+  }
+}

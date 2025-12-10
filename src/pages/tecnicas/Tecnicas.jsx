@@ -1,14 +1,15 @@
 import "./Tecnicas.css";
 
-import tecnicasImg from "../../assets/images/tecnicas-estudio.jpg"; // imagen principal
+import tecnicasImg from "../../assets/images/tecnicas-estudio.jpg"; 
+import pensamientoImg from "../../assets/images/pensamiento.jpg"; // ✅ nueva imagen
 import PdfViewer from "../../components/PdfViewer";
-import tecnicasPdf from "../../assets/pdf/tecnicas-estudio.pdf"; // PDF
+import tecnicasPdf from "../../assets/pdf/tecnicas-estudio.pdf";
 
 function Tecnicas() {
   return (
     <section className="tecnicas-page">
 
-      {/* TEXTO + IMAGEN */}
+      {/* TEXTO + IMAGEN SUPERIOR */}
       <div className="tecnicas-container">
 
         <div className="tecnicas-text">
@@ -38,7 +39,6 @@ function Tecnicas() {
 
         <PdfViewer fileUrl={tecnicasPdf} height={500} />
 
-        {/* BOTÓN DESCARGA */}
         <div className="pdf-download">
           <a
             href={tecnicasPdf}
@@ -48,6 +48,30 @@ function Tecnicas() {
             Descargar PDF del Informe
           </a>
         </div>
+      </div>
+
+      {/* ✅ REFLEXIÓN ABAJO DEL TODO */}
+      <div className="tecnicas-reflexion">
+
+        <div className="reflexion-text">
+          <h2>Reflexión</h2>
+          <p>
+            El aprendizaje de estas técnicas me permitió reconocer la importancia
+            de estudiar de forma organizada y consciente. Aplicar estrategias como
+            esquemas y mapas conceptuales facilitó la comprensión de los contenidos
+            y mejoró mi capacidad de análisis.
+          </p>
+          <p>
+            Considero que el pensamiento crítico es fundamental en la vida
+            universitaria, ya que permite cuestionar, reflexionar y tomar decisiones
+            responsables frente al conocimiento y a las situaciones académicas.
+          </p>
+        </div>
+
+        <div className="reflexion-image">
+          <img src={pensamientoImg} alt="Pensamiento crítico" />
+        </div>
+
       </div>
 
     </section>

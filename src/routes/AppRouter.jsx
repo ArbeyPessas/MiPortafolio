@@ -5,10 +5,8 @@ import Contexto from "../pages/contexto/Contexto";
 import Normatividad from "../pages/normatividad/Normatividad";
 import Emociones from "../pages/emociones/Emociones";
 import GestionTiempo from "../pages/tiempo/Tiempo"
-import Tecnicas from "../pages/tecnicas/Tecnicas";
-import Comunicacion from "../pages/comunicacion/Comunicacion";
-import Habilidades from "../pages/habilidades/Habilidades";
-
+import Tecnicas from "../pages/tecnicas/Tecnicas"
+import Referencias from "../pages/referencias/referencias"
 const AppRouter = () => {
   return (
     <Routes>
@@ -18,8 +16,10 @@ const AppRouter = () => {
       <Route path="/emociones" element={<Emociones />} />
       <Route path="/gestion-tiempo" element={<GestionTiempo />} />
       <Route path="/tecnicas-estudio" element={<Tecnicas />} />
-      <Route path="/comunicacion-resolucion-conflictos" element={<Comunicacion />} />
-      <Route path="/habilidades-competencias" element={<Habilidades />} />
+      <Route path="/referencias" element={<Referencias />} />
+
+      
+      
 
 
       {/* Más rutas aquí */}

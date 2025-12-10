@@ -1,0 +1,71 @@
+/* =============================== */
+/* PÁGINA REFERENCIAS */
+/* =============================== */
+.referencias-page {
+  background: #0f1117;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+/* =============================== */
+/* HEADER */
+/* =============================== */
+.referencias-header {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.referencias-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.referencias-header p {
+  color: #c7c7c7;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* =============================== */
+/* SECCIONES */
+/* =============================== */
+.referencias-section {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+}
+
+.referencias-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  border-left: 4px solid #3b82f6;
+  padding-left: 12px;
+}
+
+/* =============================== */
+/* LISTA DE REFERENCIAS */
+/* =============================== */
+.referencias-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.referencias-list li {
+  background: #111827;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+  font-size: 16px;
+  color: #d1d5db;
+}
+
+/* ENLACES */
+.referencias-list a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}

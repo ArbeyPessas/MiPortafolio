@@ -1,85 +1,115 @@
+/* ===== PÁGINA CONTEXTO ===== */
 .contexto-page {
   background: #15292B;
-  color: #fff;
-  padding: 20px 20px;
+  color: #ffffff;
   min-height: 100vh;
+  padding: 60px 20px;
 }
 
-/* Header */
+/* ===== HEADER ===== */
+.contexto-header {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+}
+
 .contexto-header h1 {
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 700;
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: left;
 }
 
-/* Secciones generales */
+/* ===== SECCIONES ===== */
 .contexto-section {
-  margin: 50px auto;
-  max-width: 1200px;
-  padding: 0 20px;        /* ← Importante para responsividad */
+  max-width: 1100px;
+  margin: 0 auto 60px;
 }
 
-.contexto-section h2 {
+/* Títulos de sección */
+.contexto-section h2,
+.wide-text h2 {
   font-size: 28px;
   margin-bottom: 20px;
+  text-align: left;
   border-left: 4px solid #3b82f6;
-  padding-left: 12px;
+  padding-left: 14px;
 }
 
-/* Texto de reflexión */
-.reflexion p {
+/* ===== INFOCARD ===== */
+.info-card {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  text-align: left;
+}
+
+/* ===== ✅ VIDEO (MÁS PEQUEÑO) ===== */
+.video-wrapper {
+  max-width: 800px;          /* 🔥 antes 1100px */
+  margin: 0 auto;            /* centrado */
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #1f2937;
+}
+
+/* Si el video es iframe o video */
+.video-wrapper video,
+.video-wrapper iframe {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== TEXTO ANCHO (REFLEXIÓN) ===== */
+.wide-text {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+}
+
+.wide-text p {
   color: #c7c7c7;
   font-size: 17px;
-  line-height: 1.6;
-  max-width: 900px;
+  line-height: 1.7;
+  text-align: justify;
 }
 
-/* ===================== */
-/* 🔥 RESPONSIVE REAL 🔥 */
-/* ===================== */
+/* ===== GALERÍA ===== */
+.gallery {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 992px) {
   .contexto-header h1 {
-    font-size: 38px;
+    font-size: 36px;
   }
 
-  .contexto-section {
-    margin: 40px auto;
-    padding: 0 15px;
-  }
-
-  .contexto-section h2 {
+  .contexto-section h2,
+  .wide-text h2 {
     font-size: 26px;
   }
 
-  .reflexion p {
-    font-size: 16px;
-    max-width: 100%; /* ← Se adapta al ancho del móvil/tablet */
+  .video-wrapper {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .contexto-header h1 {
-    font-size: 32px;
-    margin-bottom: 25px;
+  .contexto-page {
+    padding: 40px 15px;
   }
 
-  .contexto-section h2 {
+  .contexto-header h1 {
+    font-size: 30px;
+  }
+
+  .contexto-section h2,
+  .wide-text h2 {
     font-size: 22px;
     border-left-width: 3px;
   }
 
-  .contexto-page {
-    padding: 15px 10px;
-  }
-
-  .contexto-section {
-    margin: 30px auto;
-  }
-
-  .reflexion p {
-    font-size: 15px;
-    line-height: 1.55;
+  .wide-text p {
+    font-size: 16px;
   }
 }
 
@@ -88,15 +118,7 @@
     font-size: 26px;
   }
 
-  .contexto-section h2 {
-    font-size: 20px;
-  }
-
-  .contexto-page {
-    padding: 10px 8px;
-  }
-
-  .reflexion p {
-    font-size: 14px;
+  .wide-text p {
+    font-size: 15px;
   }
 }

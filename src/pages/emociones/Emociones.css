@@ -1,21 +1,25 @@
+/* ===== PÁGINA GENERAL ===== */
 .emociones-page {
   background: #0f1117;
-  color: #fff;
+  color: #ffffff;
   min-height: 100vh;
   padding: 60px 20px;
 }
 
-/* CONTENEDOR PRINCIPAL */
+/* ===== CONTENEDOR PRINCIPAL ===== */
 .emociones-container {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  display: flex;
   align-items: center;
+  gap: 40px;
 }
 
-/* TEXTO */
+/* TEXTO SUPERIOR */
+.emociones-text {
+  flex: 1;
+}
+
 .emociones-text h1 {
   font-size: 42px;
   margin-bottom: 20px;
@@ -24,43 +28,121 @@
 .emociones-text p {
   color: #c7c7c7;
   font-size: 17px;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 15px;
 }
 
-/* IMAGEN */
-.emociones-image img {
-  width: 100%;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+/* IMAGEN SUPERIOR */
+.emociones-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
-/* PDF */
+.emociones-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+}
+
+/* ===== PDF ===== */
 .emociones-pdf {
-  max-width: 1200px;
-  margin: 70px auto 0;
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  text-align: center;
 }
 
 .emociones-pdf h2 {
   font-size: 28px;
   margin-bottom: 20px;
+}
+
+.pdf-download {
+  margin-top: 20px;
+}
+
+.download-btn {
+  background: #3b82f6;
+  padding: 12px 22px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.download-btn:hover {
+  background: #2563eb;
+}
+
+/* ===== REFLEXIÓN (ABAJO) ===== */
+.emociones-reflexion {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* TEXTO IZQUIERDA */
+.reflexion-text {
+  flex: 1;
+}
+
+.reflexion-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
   border-left: 4px solid #3b82f6;
   padding-left: 12px;
 }
 
-/* RESPONSIVE */
+.reflexion-text p {
+  color: #c7c7c7;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* IMAGEN DERECHA */
+.reflexion-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.reflexion-image img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
-  .emociones-container {
-    grid-template-columns: 1fr;
+  .emociones-container,
+  .emociones-reflexion {
+    flex-direction: column;
     text-align: center;
   }
 
-  .emociones-text h1 {
-    font-size: 32px;
+  .reflexion-text h2 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .emociones-page {
+    padding: 40px 15px;
   }
 
-  .emociones-pdf h2 {
-    font-size: 24px;
+  .emociones-text h1 {
+    font-size: 30px;
+  }
+
+  .emociones-pdf h2,
+  .reflexion-text h2 {
+    font-size: 22px;
+  }
+
+  .emociones-text p,
+  .reflexion-text p {
+    font-size: 15px;
   }
 }
