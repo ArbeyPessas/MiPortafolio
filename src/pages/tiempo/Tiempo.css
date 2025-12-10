@@ -1,0 +1,103 @@
+/* ===== CONTENEDOR GENERAL ===== */
+.tiempo-page {
+  background: #0f1117;
+  color: #fff;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* ===== TEXTO + IMAGEN SUPERIOR ===== */
+.tiempo-container {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* TEXTO */
+.tiempo-text {
+  flex: 1;
+}
+
+.tiempo-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.tiempo-text p {
+  color: #c7c7c7;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* IMAGEN PRINCIPAL */
+.tiempo-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.tiempo-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* ===== CRONOGRAMA ===== */
+.tiempo-cronograma {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tiempo-cronograma h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  border-left: 4px solid #3b82f6;
+  padding-left: 12px;
+  text-align: left;
+}
+
+/* IMAGEN CRONOGRAMA – PARTE SEGURA */
+.tiempo-cronograma img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: contain;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .tiempo-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tiempo-text h1 {
+    font-size: 32px;
+  }
+
+  .tiempo-cronograma h2 {
+    font-size: 24px;
+    text-align: center;
+    border-left: none;
+    border-bottom: 3px solid #3b82f6;
+    padding-left: 0;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tiempo-page {
+    padding: 30px 15px;
+  }
+
+  .tiempo-text p {
+    font-size: 16px;
+  }
+}
